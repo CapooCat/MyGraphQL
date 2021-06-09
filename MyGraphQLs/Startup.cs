@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyGraphQL.GraphQL;
 using MyGraphQLs.HotChocolate;
+using MyGraphQLs.HotChocolate.Models;
 using MyGraphQLs.Models;
 using System;
 using System.Collections.Generic;
@@ -31,7 +32,6 @@ namespace MyGraphQLs
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddPooledDbContextFactory<BookShellContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
 
             services
                 .AddGraphQLServer()

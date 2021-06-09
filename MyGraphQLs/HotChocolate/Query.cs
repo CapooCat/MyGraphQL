@@ -10,16 +10,18 @@ namespace MyGraphQL.GraphQL
 {
     public class Query
     {
-        [UseFiltering]
+        
         [UseDbContext(typeof(BookShellContext))]
+        [UseFiltering]
         public IQueryable<Book> GetBooks(
-             [ScopedService] BookShellContext dbContext)
-             => dbContext.Books;
+             [ScopedService] BookShellContext db)
+             => db.Books;
 
-        [UseFiltering]
+        
         [UseDbContext(typeof(BookShellContext))]
+        [UseFiltering]
         public IQueryable<User> GetUsers(
-             [ScopedService] BookShellContext dbContext)
-             => dbContext.Users;
+             [ScopedService] BookShellContext db)
+             => db.Users;
     }
 }

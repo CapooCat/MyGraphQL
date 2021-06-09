@@ -10,32 +10,43 @@ namespace MyGraphQLs.HotChocolate
 {
     public class Mutation
     {
-        private BookShellContext db;
-
-        public Mutation([ScopedService] BookShellContext _db)
+        [UseDbContext(typeof(BookShellContext))]
+        public bool CreateBook(CreateBookInput model, [ScopedService] BookShellContext db)
         {
-            db = _db;
+            try
+            {
+                var book = new Book
+                {
+                    BookName = model.bookName,
+                    BookAuthor = model.bookAuthor,
+                    Price = model.Price,
+                    Img = model.img,
+                    AuthenId = model.authen_id
+                };
+                db.Books.Add(book);
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         [UseDbContext(typeof(BookShellContext))]
-        public bool CreateBook(CreateBookInput model)
+        public bool DeleteBook(DeleteBookId model, [ScopedService] BookShellContext db)
         {
-            Book book = new Book();
-            book.BookName = model.bookName;
-            book.BookAuthor = model.bookAuthor;
-            book.Price = model.Price;
-            book.Img = model.img;
-            book.AuthenId = 1;
-            db.Books.Add(book);
-            return true;
-        }
-
-        [UseDbContext(typeof(BookShellContext))]
-        public bool DeleteBook(DeleteBookId model)
-        {
-            var BookToDelete = db.Books.Single(x => x.Id == model.id);
-            db.Books.Remove(BookToDelete);
-            return true;
+            try
+            {
+                var BookToDelete = db.Books.Single(x => x.Id == model.id);
+                db.Books.Remove(BookToDelete);
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
     public class CreateBookInput

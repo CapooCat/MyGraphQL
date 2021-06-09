@@ -20,14 +20,6 @@ namespace MyGraphQLs.Models
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserPermission> UserPermissions { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-5NSUHFK;Database=BookShell;Integrated Security=True;Trusted_Connection=True;MultipleActiveResultSets=true");
-            }
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
