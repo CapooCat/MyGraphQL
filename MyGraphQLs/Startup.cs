@@ -35,10 +35,15 @@ namespace MyGraphQLs
 
             services
                 .AddGraphQLServer()
+
                 .AddMutationType<Mutation>()
+
                 .AddFiltering()
-                .AddType<Book>()
-                .AddType<User>()
+                .AddProjections()
+
+                .AddType<BookType>()
+                .AddType<UserType>()
+
                 .AddQueryType<Query>();
         }
 

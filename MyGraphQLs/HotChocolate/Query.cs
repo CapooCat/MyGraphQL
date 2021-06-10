@@ -12,6 +12,7 @@ namespace MyGraphQL.GraphQL
     {
         
         [UseDbContext(typeof(BookShellContext))]
+        [UseProjection]
         [UseFiltering]
         public IQueryable<Book> GetBooks(
              [ScopedService] BookShellContext db)
@@ -19,6 +20,7 @@ namespace MyGraphQL.GraphQL
 
         
         [UseDbContext(typeof(BookShellContext))]
+        [UseProjection]
         [UseFiltering]
         public IQueryable<User> GetUsers(
              [ScopedService] BookShellContext db)

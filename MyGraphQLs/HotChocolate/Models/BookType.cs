@@ -18,11 +18,7 @@ namespace MyGraphQLs.HotChocolate.Models
             descriptor.Field(t => t.Price).Type<NonNullType<IntType>>();
             descriptor.Field(t => t.Img).Type<NonNullType<StringType>>();
             descriptor.Field(t => t.AuthenId).Type<NonNullType<IntType>>();
-
-            descriptor.Field("user").UseDbContext<BookShellContext>().Resolver((ctx) =>
-            {
-                return ctx.Service<BookShellContext>().Users;
-            });
+            descriptor.Field(t => t.Authen);
         }
     }
 }
