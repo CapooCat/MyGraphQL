@@ -11,9 +11,9 @@ namespace MyGraphQLs.HotChocolate.Models
     {
         protected override void Configure(IObjectTypeDescriptor<User> descriptor)
         {
-            descriptor.Field(t => t.Id).Type<IdType>();
-            descriptor.Field(t => t.Username).Type<NonNullType<StringType>>();
-            descriptor.Field(t => t.Displayname).Type<NonNullType<IntType>>();
+            descriptor.Field(t => t.Id).Type<IdType>().Authorize();
+            descriptor.Field(t => t.Username).Type<NonNullType<StringType>>().Authorize();
+            descriptor.Field(t => t.Displayname).Type<NonNullType<IntType>>().Authorize();
             descriptor.Ignore(t => t.Token);
             descriptor.Ignore(t => t.Password);
         }

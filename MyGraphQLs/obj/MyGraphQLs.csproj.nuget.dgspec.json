@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[11.2.2, )"
             },
+            "HotChocolate.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "HotChocolate.AspNetCore.Playground": {
               "target": "Package",
               "version": "[10.5.5, )"
@@ -55,6 +59,10 @@
             "HotChocolate.Types.Filters": {
               "target": "Package",
               "version": "[11.2.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -69,6 +77,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.11.1, )"
             }
           },
           "imports": [

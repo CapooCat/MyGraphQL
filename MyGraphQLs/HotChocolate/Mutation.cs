@@ -1,4 +1,5 @@
 ﻿using HotChocolate;
+using HotChocolate.AspNetCore.Authorization;
 using HotChocolate.Data;
 using MyGraphQLs.Models;
 using System;
@@ -11,6 +12,7 @@ namespace MyGraphQLs.HotChocolate
     public class Mutation
     {
         [UseDbContext(typeof(BookShellContext))]
+        [Authorize]
         public bool CreateBook(CreateBookInput model, [ScopedService] BookShellContext db)
         {
             try
@@ -34,6 +36,7 @@ namespace MyGraphQLs.HotChocolate
         }
 
         [UseDbContext(typeof(BookShellContext))]
+        [Authorize]
         public bool DeleteBook(DeleteBookId model, [ScopedService] BookShellContext db)
         {
             try
@@ -46,6 +49,26 @@ namespace MyGraphQLs.HotChocolate
             catch
             {
                 return false;
+            }
+        }
+
+        [UseDbContext(typeof(BookShellContext))]
+        public string Login (Login model, [ScopedService] BookShellContext db)
+        {
+            try
+            {
+                model.password = DataEncryption.EncryptString(model.password);
+                var User = db.Users.Single(x => x.Username == model.username && x.Password == model.password);
+                if(User != null)
+                {
+                    return GenerateToken.Execute(model.username, model.password);
+                }
+                return "Invalid User";
+                
+            }
+            catch
+            {
+                return "Invalid User";
             }
         }
     }
@@ -62,5 +85,11 @@ namespace MyGraphQLs.HotChocolate
     public class DeleteBookId
     {
         public int id { get; set; }
+    }
+
+    public class Login
+    {
+        public string username { get; set; }
+        public string password { get; set; }
     }
 }

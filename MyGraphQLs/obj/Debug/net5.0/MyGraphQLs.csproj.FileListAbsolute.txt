@@ -154,3 +154,5 @@ C:\Users\trant\source\repos\MyGraphQLs\MyGraphQLs\bin\Debug\net5.0\HotChocolate.
 C:\Users\trant\source\repos\MyGraphQLs\MyGraphQLs\bin\Debug\net5.0\Microsoft.Extensions.DiagnosticAdapter.dll
 C:\Users\trant\source\repos\MyGraphQLs\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Types.Filters.dll
 C:\Users\trant\source\repos\MyGraphQLs\MyGraphQLs\obj\Debug\net5.0\MyGraphQLs.csproj.AssemblyReference.cache
+C:\Users\trant\source\repos\MyGraphQLs\MyGraphQLs\bin\Debug\net5.0\HotChocolate.AspNetCore.Authorization.dll
+C:\Users\trant\source\repos\MyGraphQLs\MyGraphQLs\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
