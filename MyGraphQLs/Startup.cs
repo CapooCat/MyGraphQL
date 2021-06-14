@@ -30,9 +30,12 @@ namespace MyGraphQLs
         }
 
         public IConfiguration Configuration { get; }
+        public const string Inventory = "inventory";
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient(Inventory, c => c.BaseAddress = new Uri("https://localhost:44346/graphql"));
+
             //Them Authentication
             var key = "4fb4043e16ff127eca681216598a830e8b0cf3bf";
             var issuer = DataEncryption.EncryptString(System.Net.Dns.GetHostName());
@@ -61,10 +64,14 @@ namespace MyGraphQLs
                 .AddProjections()
                 .AddAuthorization()
 
+
                 .AddType<BookType>()
                 .AddType<UserType>()
 
                 .AddQueryType<Query>();
+
+                //.AddQueryType(d => d.Name("Query"))
+                //.AddRemoteSchema(Inventory, ignoreRootTypes: true);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -82,6 +89,7 @@ namespace MyGraphQLs
             }
             app.UseAuthentication();
             app.UseGraphQL("/api");
+            app.UseRouting();
         }
     }
 }

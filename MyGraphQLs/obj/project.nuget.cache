@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MDfIZh5VAYDMdpDl+pgOFFHz7Sw8t1S7qfwLxV6cQ+Ga3fvR4qBG5agH5YcJzLF1N6ZUq2nGrwKPRvRXQCXJtA==",
+  "dgSpecHash": "P1y44EqUYjNekVBMJXV6CSV67el3cuyySAZqenxwbq8/T87g1+ESpWCiM9QpG9/huhEAc+4A10dFzNMo2LrqtA==",
   "success": true,
   "projectFilePath": "C:\\Users\\trant\\Documents\\GitHub\\MyGraphQL\\MyGraphQLs\\MyGraphQLs.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,8 @@
     "C:\\Users\\trant\\.nuget\\packages\\hotchocolate.language.utf8\\11.3.0\\hotchocolate.language.utf8.11.3.0.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\hotchocolate.language.visitors\\11.3.0\\hotchocolate.language.visitors.11.3.0.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\hotchocolate.server\\10.5.5\\hotchocolate.server.10.5.5.nupkg.sha512",
+    "C:\\Users\\trant\\.nuget\\packages\\hotchocolate.stitching\\11.3.0\\hotchocolate.stitching.11.3.0.nupkg.sha512",
+    "C:\\Users\\trant\\.nuget\\packages\\hotchocolate.stitching.abstractions\\11.3.0\\hotchocolate.stitching.abstractions.11.3.0.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\hotchocolate.subscriptions\\11.3.0\\hotchocolate.subscriptions.11.3.0.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\hotchocolate.subscriptions.inmemory\\11.3.0\\hotchocolate.subscriptions.inmemory.11.3.0.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\hotchocolate.types\\11.3.0\\hotchocolate.types.11.3.0.nupkg.sha512",
@@ -72,6 +74,7 @@
     "C:\\Users\\trant\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.1.1\\microsoft.extensions.fileproviders.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\2.1.1\\microsoft.extensions.fileproviders.embedded.2.1.1.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.1.1\\microsoft.extensions.hosting.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Users\\trant\\.nuget\\packages\\microsoft.extensions.http\\3.1.4\\microsoft.extensions.http.3.1.4.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\trant\\.nuget\\packages\\microsoft.extensions.objectpool\\3.1.4\\microsoft.extensions.objectpool.3.1.4.nupkg.sha512",

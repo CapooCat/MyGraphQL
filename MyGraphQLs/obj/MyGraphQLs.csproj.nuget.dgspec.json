@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[11.2.2, )"
             },
+            "HotChocolate.Stitching": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "HotChocolate.Types.Filters": {
               "target": "Package",
               "version": "[11.2.2, )"

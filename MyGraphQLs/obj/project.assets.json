@@ -229,6 +229,33 @@
           "lib/netstandard2.0/HotChocolate.Server.dll": {}
         }
       },
+      "HotChocolate.Stitching/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "HotChocolate": "11.3.0",
+          "HotChocolate.Stitching.Abstractions": "11.3.0",
+          "Microsoft.Extensions.Http": "3.1.4"
+        },
+        "compile": {
+          "lib/net5.0/HotChocolate.Stitching.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/HotChocolate.Stitching.dll": {}
+        }
+      },
+      "HotChocolate.Stitching.Abstractions/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "HotChocolate.Abstractions": "11.3.0",
+          "HotChocolate.Language.SyntaxTree": "11.3.0"
+        },
+        "compile": {
+          "lib/net5.0/HotChocolate.Stitching.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/HotChocolate.Stitching.Abstractions.dll": {}
+        }
+      },
       "HotChocolate.Subscriptions/11.3.0": {
         "type": "package",
         "dependencies": {
@@ -1110,6 +1137,20 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Http/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.4",
+          "Microsoft.Extensions.Logging": "3.1.4",
+          "Microsoft.Extensions.Options": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll": {}
         }
       },
       "Microsoft.Extensions.Logging/5.0.0": {
@@ -2880,6 +2921,34 @@
         "lib/netstandard2.0/Server.xml"
       ]
     },
+    "HotChocolate.Stitching/11.3.0": {
+      "sha512": "I94jkx6M6C+QVpKhNV30llSW+QwNhBZb1OCD9ILTh3wcxptYvTjDXJ/kOZhNpDbz2VMru5YbUXDqaYSsV1IVfg==",
+      "type": "package",
+      "path": "hotchocolate.stitching/11.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotchocolate.stitching.11.3.0.nupkg.sha512",
+        "hotchocolate.stitching.nuspec",
+        "lib/net5.0/HotChocolate.Stitching.dll",
+        "lib/netcoreapp3.1/HotChocolate.Stitching.dll",
+        "lib/netstandard2.0/HotChocolate.Stitching.dll"
+      ]
+    },
+    "HotChocolate.Stitching.Abstractions/11.3.0": {
+      "sha512": "AlKpK6eOJKtkK6OeWfiUMTVJW+h9laK+69MWi58N02Edgd/Wa4BD355OAJUj+NxQ21rctkMCiukKdDhuX0VB0Q==",
+      "type": "package",
+      "path": "hotchocolate.stitching.abstractions/11.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotchocolate.stitching.abstractions.11.3.0.nupkg.sha512",
+        "hotchocolate.stitching.abstractions.nuspec",
+        "lib/net5.0/HotChocolate.Stitching.Abstractions.dll",
+        "lib/netcoreapp3.1/HotChocolate.Stitching.Abstractions.dll",
+        "lib/netstandard2.0/HotChocolate.Stitching.Abstractions.dll"
+      ]
+    },
     "HotChocolate.Subscriptions/11.3.0": {
       "sha512": "FrIpMUShEpqupnXMewq1jKxrvotlRmcv435h5G6u3T3ul1Nu1GkZ+3gYAHw1dKcGkFgKINTeuEWECoK5MUUSDA==",
       "type": "package",
@@ -3986,6 +4055,22 @@
         "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.xml",
         "microsoft.extensions.hosting.abstractions.2.1.1.nupkg.sha512",
         "microsoft.extensions.hosting.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Http/3.1.4": {
+      "sha512": "7Dllyya8eO03dB2nRDFp+NcF383OjGl80cHiHKHgJ1x8YN+HXLqrWaVBIQipKdb0eYOGq+iqlsb1P2ygmIRNRg==",
+      "type": "package",
+      "path": "microsoft.extensions.http/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Http.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.xml",
+        "microsoft.extensions.http.3.1.4.nupkg.sha512",
+        "microsoft.extensions.http.nuspec"
       ]
     },
     "Microsoft.Extensions.Logging/5.0.0": {
@@ -8485,6 +8570,7 @@
       "HotChocolate.AspNetCore.Authorization >= 11.3.0",
       "HotChocolate.AspNetCore.Playground >= 10.5.5",
       "HotChocolate.Data.EntityFramework >= 11.2.2",
+      "HotChocolate.Stitching >= 11.3.0",
       "HotChocolate.Types.Filters >= 11.2.2",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.6",
@@ -8547,6 +8633,10 @@
           "HotChocolate.Data.EntityFramework": {
             "target": "Package",
             "version": "[11.2.2, )"
+          },
+          "HotChocolate.Stitching": {
+            "target": "Package",
+            "version": "[11.3.0, )"
           },
           "HotChocolate.Types.Filters": {
             "target": "Package",
