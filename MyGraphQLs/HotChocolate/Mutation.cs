@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace MyGraphQLs.HotChocolate
 {
+    //Mutation duoc su dung de xu ly them xoa sua, hoặc cac yeu cau Post
     public class Mutation
     {
         [UseDbContext(typeof(BookShellContext))]

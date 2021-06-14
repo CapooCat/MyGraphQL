@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyGraphQL.GraphQL
 {
+    //Query duoc su dung de Get Data tu database
     public class Query
     {
         
@@ -18,7 +19,7 @@ namespace MyGraphQL.GraphQL
              [ScopedService] BookShellContext db)
              => db.Books;
 
-        
+           
         [UseDbContext(typeof(BookShellContext))]
         [UseProjection]
         [UseFiltering]

@@ -30,10 +30,10 @@ namespace MyGraphQLs
         }
 
         public IConfiguration Configuration { get; }
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+
         public void ConfigureServices(IServiceCollection services)
         {
+            //Them Authentication
             var key = "4fb4043e16ff127eca681216598a830e8b0cf3bf";
             var issuer = DataEncryption.EncryptString(System.Net.Dns.GetHostName());
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
@@ -48,8 +48,10 @@ namespace MyGraphQLs
                     ValidateIssuerSigningKey = true
                 };
             });
-
+            //Ket noi database
             services.AddPooledDbContextFactory<BookShellContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            //Khoi tao GraphQL schema
             services
                 .AddGraphQLServer()
 
@@ -71,6 +73,7 @@ namespace MyGraphQLs
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                //setup duong dan GraphQL
                 app.UsePlayground(new PlaygroundOptions
                 {
                     QueryPath = "/api",

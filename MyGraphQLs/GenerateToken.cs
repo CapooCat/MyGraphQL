@@ -12,6 +12,7 @@ namespace MyGraphQLs
 {
     public class GenerateToken
     {
+		//Khoi tao Token
         public static string Execute (string username, string password)
         {
 			var key = "4fb4043e16ff127eca681216598a830e8b0cf3bf";

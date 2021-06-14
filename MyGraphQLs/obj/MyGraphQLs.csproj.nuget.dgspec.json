@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\trant\\source\\repos\\MyGraphQLs\\MyGraphQLs\\MyGraphQLs.csproj": {}
+    "C:\\Users\\trant\\Documents\\GitHub\\MyGraphQL\\MyGraphQLs\\MyGraphQLs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\trant\\source\\repos\\MyGraphQLs\\MyGraphQLs\\MyGraphQLs.csproj": {
+    "C:\\Users\\trant\\Documents\\GitHub\\MyGraphQL\\MyGraphQLs\\MyGraphQLs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\trant\\source\\repos\\MyGraphQLs\\MyGraphQLs\\MyGraphQLs.csproj",
+        "projectUniqueName": "C:\\Users\\trant\\Documents\\GitHub\\MyGraphQL\\MyGraphQLs\\MyGraphQLs.csproj",
         "projectName": "MyGraphQLs",
-        "projectPath": "C:\\Users\\trant\\source\\repos\\MyGraphQLs\\MyGraphQLs\\MyGraphQLs.csproj",
+        "projectPath": "C:\\Users\\trant\\Documents\\GitHub\\MyGraphQL\\MyGraphQLs\\MyGraphQLs.csproj",
         "packagesPath": "C:\\Users\\trant\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\trant\\source\\repos\\MyGraphQLs\\MyGraphQLs\\obj\\",
+        "outputPath": "C:\\Users\\trant\\Documents\\GitHub\\MyGraphQL\\MyGraphQLs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\trant\\AppData\\Roaming\\NuGet\\NuGet.Config",
