@@ -1,6 +1,0 @@
-extend type Product {
-  inStock: Boolean
-    @delegate(path: "inventoryInfo(upc: $fields:upc).isInStock")
-  shippingEstimate: Int
-    @delegate(path: "shippingEstimate(price: $fields:price weight: $fields:weight)")
-}

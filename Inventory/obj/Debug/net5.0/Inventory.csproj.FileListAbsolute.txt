@@ -31,7 +31,6 @@ C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\bin\Debug\net5.0\HotChocolat
 C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\bin\Debug\net5.0\Microsoft.Extensions.DiagnosticAdapter.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\obj\Debug\net5.0\Inventory.csproj.AssemblyReference.cache
 C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\obj\Debug\net5.0\Inventory.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\obj\Debug\net5.0\Inventory.AssemblyInfoInputs.cache
 C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\obj\Debug\net5.0\Inventory.AssemblyInfo.cs

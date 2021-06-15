@@ -34,7 +34,7 @@ namespace MyGraphQLs
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpClient(Inventory, c => c.BaseAddress = new Uri("https://localhost:44346/graphql"));
+            services.AddHttpClient(Inventory, c => c.BaseAddress = new Uri("https://localhost:44346/graphql/"));
 
             //Them Authentication
             var key = "4fb4043e16ff127eca681216598a830e8b0cf3bf";
@@ -67,11 +67,19 @@ namespace MyGraphQLs
 
                 .AddType<BookType>()
                 .AddType<UserType>()
+                //Vi khong the su dung duoc 2 QueryType nen:
+                //comment phan nay va
+                .AddQueryType<Query>()
 
-                .AddQueryType<Query>();
-
+                //uncomment phan nay de test Gateway
                 //.AddQueryType(d => d.Name("Query"))
-                //.AddRemoteSchema(Inventory, ignoreRootTypes: true);
+
+
+                .AddRemoteSchema(Inventory, ignoreRootTypes: true)
+                .AddTypeExtensionsFromFile("./Stitching.graphql")
+                
+                
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -83,12 +91,12 @@ namespace MyGraphQLs
                 //setup duong dan GraphQL
                 app.UsePlayground(new PlaygroundOptions
                 {
-                    QueryPath = "/api",
+                    QueryPath = "/graphql",
                     Path = "/playground"
                 });
             }
             app.UseAuthentication();
-            app.UseGraphQL("/api");
+            app.UseGraphQL("/graphql");
             app.UseRouting();
         }
     }
