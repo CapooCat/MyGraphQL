@@ -1,0 +1,6 @@
+extend type InventoryInfo {
+  upc: Int!
+}
+extend type Query {
+  inventoryInfo(upc: Int!): InventoryInfo @delegate(schema: "inventory")
+}

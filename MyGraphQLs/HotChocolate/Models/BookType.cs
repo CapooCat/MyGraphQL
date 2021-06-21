@@ -12,13 +12,13 @@ namespace MyGraphQLs.HotChocolate.Models
     {
         protected override void Configure(IObjectTypeDescriptor<Book> descriptor)
         {
-            descriptor.Field(t => t.Id).Type<IdType>().Authorize();
-            descriptor.Field(t => t.BookName).Type<NonNullType<StringType>>().Authorize();
-            descriptor.Field(t => t.BookAuthor).Type<NonNullType<StringType>>().Authorize();
-            descriptor.Field(t => t.Price).Type<NonNullType<IntType>>().Authorize();
-            descriptor.Field(t => t.Img).Type<NonNullType<StringType>>().Authorize();
-            descriptor.Field(t => t.AuthenId).Type<NonNullType<IntType>>().Authorize();
-            descriptor.Field(t => t.Authen).Authorize();
+            descriptor.Field(t => t.Id).Type<IdType>();
+            descriptor.Field(t => t.BookName).Type<NonNullType<StringType>>();
+            descriptor.Field(t => t.BookAuthor).Type<NonNullType<StringType>>();
+            descriptor.Field(t => t.Price).Type<NonNullType<IntType>>();
+            descriptor.Field(t => t.Img).Type<NonNullType<StringType>>();
+            descriptor.Field(t => t.AuthenId).Type<NonNullType<IntType>>();
+            descriptor.Field(t => t.Authen);
         }
     }
 }

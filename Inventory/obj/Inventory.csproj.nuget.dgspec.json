@@ -42,7 +42,7 @@
           "dependencies": {
             "HotChocolate.AspNetCore": {
               "target": "Package",
-              "version": "[11.2.2, )"
+              "version": "[11.3.0, )"
             },
             "HotChocolate.Stitching": {
               "target": "Package",

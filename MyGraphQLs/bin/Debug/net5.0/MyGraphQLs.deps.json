@@ -33,10 +33,10 @@
     ".NETCoreApp,Version=v5.0": {
       "MyGraphQLs/1.0.0": {
         "dependencies": {
-          "HotChocolate.AspNetCore": "11.2.2",
+          "HotChocolate.AspNetCore": "11.3.0",
           "HotChocolate.AspNetCore.Authorization": "11.3.0",
           "HotChocolate.AspNetCore.Playground": "10.5.5",
-          "HotChocolate.Data.EntityFramework": "11.2.2",
+          "HotChocolate.Data.EntityFramework": "11.3.0",
           "HotChocolate.Stitching": "11.3.0",
           "HotChocolate.Types.Filters": "11.2.2",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.7",
@@ -383,15 +383,15 @@
           "lib/net5.0/HotChocolate.Abstractions.dll": {}
         }
       },
-      "HotChocolate.AspNetCore/11.2.2": {
+      "HotChocolate.AspNetCore/11.3.0": {
         "dependencies": {
           "HotChocolate": "11.3.0",
-          "HotChocolate.Types.Scalars.Upload": "11.2.2"
+          "HotChocolate.Types.Scalars.Upload": "11.3.0"
         },
         "runtime": {
           "lib/net5.0/HotChocolate.AspNetCore.dll": {
-            "assemblyVersion": "11.2.2.0",
-            "fileVersion": "11.2.2.0"
+            "assemblyVersion": "11.3.0.0",
+            "fileVersion": "11.3.0.0"
           }
         },
         "compile": {
@@ -447,31 +447,31 @@
           "lib/netstandard2.0/HotChocolate.AspNetCore.Playground.dll": {}
         }
       },
-      "HotChocolate.Data/11.2.2": {
+      "HotChocolate.Data/11.3.0": {
         "dependencies": {
           "HotChocolate.Execution": "11.3.0",
           "HotChocolate.Types.CursorPagination": "11.3.0"
         },
         "runtime": {
           "lib/net5.0/HotChocolate.Data.dll": {
-            "assemblyVersion": "11.2.2.0",
-            "fileVersion": "11.2.2.0"
+            "assemblyVersion": "11.3.0.0",
+            "fileVersion": "11.3.0.0"
           }
         },
         "compile": {
           "lib/net5.0/HotChocolate.Data.dll": {}
         }
       },
-      "HotChocolate.Data.EntityFramework/11.2.2": {
+      "HotChocolate.Data.EntityFramework/11.3.0": {
         "dependencies": {
           "HotChocolate": "11.3.0",
-          "HotChocolate.Data": "11.2.2",
+          "HotChocolate.Data": "11.3.0",
           "Microsoft.EntityFrameworkCore": "5.0.6"
         },
         "runtime": {
           "lib/netstandard2.1/HotChocolate.Data.EntityFramework.dll": {
-            "assemblyVersion": "11.2.2.0",
-            "fileVersion": "11.2.2.0"
+            "assemblyVersion": "11.3.0.0",
+            "fileVersion": "11.3.0.0"
           }
         },
         "compile": {
@@ -718,14 +718,14 @@
           "lib/net5.0/HotChocolate.Types.OffsetPagination.dll": {}
         }
       },
-      "HotChocolate.Types.Scalars.Upload/11.2.2": {
+      "HotChocolate.Types.Scalars.Upload/11.3.0": {
         "dependencies": {
           "HotChocolate.Types": "11.3.0"
         },
         "runtime": {
           "lib/net5.0/HotChocolate.Types.Scalars.Upload.dll": {
-            "assemblyVersion": "11.2.2.0",
-            "fileVersion": "11.2.2.0"
+            "assemblyVersion": "11.3.0.0",
+            "fileVersion": "11.3.0.0"
           }
         },
         "compile": {
@@ -4113,12 +4113,12 @@
       "path": "hotchocolate.abstractions/11.3.0",
       "hashPath": "hotchocolate.abstractions.11.3.0.nupkg.sha512"
     },
-    "HotChocolate.AspNetCore/11.2.2": {
+    "HotChocolate.AspNetCore/11.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-veDXy3wsmSuqJPRfNqdfpgB9iiQdChxLtbhZSJUPEDGEg5hHeNIpRwSYVANW3tRhmFoCDMNWU3+RMg92Yc0tZw==",
-      "path": "hotchocolate.aspnetcore/11.2.2",
-      "hashPath": "hotchocolate.aspnetcore.11.2.2.nupkg.sha512"
+      "sha512": "sha512-+nhE7UOyf9UEO3rxv3XMCdOQPCmW6bubyzTLUgJTW6KKOipgO9aZy7P8hsTtZPSPe/hLTaDN4q2+VldKD7B0XA==",
+      "path": "hotchocolate.aspnetcore/11.3.0",
+      "hashPath": "hotchocolate.aspnetcore.11.3.0.nupkg.sha512"
     },
     "HotChocolate.AspNetCore.Abstractions/10.5.5": {
       "type": "package",
@@ -4141,19 +4141,19 @@
       "path": "hotchocolate.aspnetcore.playground/10.5.5",
       "hashPath": "hotchocolate.aspnetcore.playground.10.5.5.nupkg.sha512"
     },
-    "HotChocolate.Data/11.2.2": {
+    "HotChocolate.Data/11.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wyWnmFabg7J1Gb609izzR6s/K/G69ysDgYaQLSxOlR0acv8o8PuE8W75TKnk/e8wmOj4MYJ8elQOji9TIkrvdA==",
-      "path": "hotchocolate.data/11.2.2",
-      "hashPath": "hotchocolate.data.11.2.2.nupkg.sha512"
+      "sha512": "sha512-+Re+lzCzfVO4D5lRCbaLY+oH4u+MSc9bzS3PlDDnXKVZXcVXhZfw+hTqZeMTJdQDPMZnprteLxaePO7dLS1Tag==",
+      "path": "hotchocolate.data/11.3.0",
+      "hashPath": "hotchocolate.data.11.3.0.nupkg.sha512"
     },
-    "HotChocolate.Data.EntityFramework/11.2.2": {
+    "HotChocolate.Data.EntityFramework/11.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Dp7/wwyiOJoTOEUG6y8EKREOu07IFtyYt6kVck9EdOQCYCqoQr9LFK4QiLzrzm3oF+5K5XO08RQcjlgx5LA1iA==",
-      "path": "hotchocolate.data.entityframework/11.2.2",
-      "hashPath": "hotchocolate.data.entityframework.11.2.2.nupkg.sha512"
+      "sha512": "sha512-aY0fMQ8yYtTY11WgbLwl7vpyWzLw+M/km5zoCjZqhgM5L1QdHitlk1RavnrGpyTWaKJeid8RALzFjND4eZxW3Q==",
+      "path": "hotchocolate.data.entityframework/11.3.0",
+      "hashPath": "hotchocolate.data.entityframework.11.3.0.nupkg.sha512"
     },
     "HotChocolate.Execution/11.3.0": {
       "type": "package",
@@ -4260,12 +4260,12 @@
       "path": "hotchocolate.types.offsetpagination/11.3.0",
       "hashPath": "hotchocolate.types.offsetpagination.11.3.0.nupkg.sha512"
     },
-    "HotChocolate.Types.Scalars.Upload/11.2.2": {
+    "HotChocolate.Types.Scalars.Upload/11.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CKamIBdN9c2g31wLg32JWzMOx3KerGYuBYLr/5VC2BxYA4E48IeAc+He7+0dJjpaydh+9aK7r5jF2xfRQmX+Xw==",
-      "path": "hotchocolate.types.scalars.upload/11.2.2",
-      "hashPath": "hotchocolate.types.scalars.upload.11.2.2.nupkg.sha512"
+      "sha512": "sha512-gsIUQAYaQGVCXdccP0QwSjwgS2n4FNtCksEx2IRIULeblOf2Xy7RGIednrFvG39zdsqDG1C3LianJop4tg0qmA==",
+      "path": "hotchocolate.types.scalars.upload/11.3.0",
+      "hashPath": "hotchocolate.types.scalars.upload.11.3.0.nupkg.sha512"
     },
     "HotChocolate.Utilities/11.3.0": {
       "type": "package",

@@ -46,11 +46,11 @@
           "lib/net5.0/HotChocolate.Abstractions.dll": {}
         }
       },
-      "HotChocolate.AspNetCore/11.2.2": {
+      "HotChocolate.AspNetCore/11.3.0": {
         "type": "package",
         "dependencies": {
-          "HotChocolate": "11.2.2",
-          "HotChocolate.Types.Scalars.Upload": "11.2.2"
+          "HotChocolate": "11.3.0",
+          "HotChocolate.Types.Scalars.Upload": "11.3.0"
         },
         "compile": {
           "lib/net5.0/HotChocolate.AspNetCore.dll": {}
@@ -105,11 +105,11 @@
           "lib/netstandard2.0/HotChocolate.AspNetCore.Playground.dll": {}
         }
       },
-      "HotChocolate.Data/11.2.2": {
+      "HotChocolate.Data/11.3.0": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "11.2.2",
-          "HotChocolate.Types.CursorPagination": "11.2.2"
+          "HotChocolate.Execution": "11.3.0",
+          "HotChocolate.Types.CursorPagination": "11.3.0"
         },
         "compile": {
           "lib/net5.0/HotChocolate.Data.dll": {}
@@ -118,11 +118,11 @@
           "lib/net5.0/HotChocolate.Data.dll": {}
         }
       },
-      "HotChocolate.Data.EntityFramework/11.2.2": {
+      "HotChocolate.Data.EntityFramework/11.3.0": {
         "type": "package",
         "dependencies": {
-          "HotChocolate": "11.2.2",
-          "HotChocolate.Data": "11.2.2",
+          "HotChocolate": "11.3.0",
+          "HotChocolate.Data": "11.3.0",
           "Microsoft.EntityFrameworkCore": "5.0.0"
         },
         "compile": {
@@ -342,10 +342,10 @@
           "lib/net5.0/HotChocolate.Types.OffsetPagination.dll": {}
         }
       },
-      "HotChocolate.Types.Scalars.Upload/11.2.2": {
+      "HotChocolate.Types.Scalars.Upload/11.3.0": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Types": "11.2.2"
+          "HotChocolate.Types": "11.3.0"
         },
         "compile": {
           "lib/net5.0/HotChocolate.Types.Scalars.Upload.dll": {}
@@ -2739,14 +2739,14 @@
         "lib/netstandard2.0/HotChocolate.Abstractions.dll"
       ]
     },
-    "HotChocolate.AspNetCore/11.2.2": {
-      "sha512": "veDXy3wsmSuqJPRfNqdfpgB9iiQdChxLtbhZSJUPEDGEg5hHeNIpRwSYVANW3tRhmFoCDMNWU3+RMg92Yc0tZw==",
+    "HotChocolate.AspNetCore/11.3.0": {
+      "sha512": "+nhE7UOyf9UEO3rxv3XMCdOQPCmW6bubyzTLUgJTW6KKOipgO9aZy7P8hsTtZPSPe/hLTaDN4q2+VldKD7B0XA==",
       "type": "package",
-      "path": "hotchocolate.aspnetcore/11.2.2",
+      "path": "hotchocolate.aspnetcore/11.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "hotchocolate.aspnetcore.11.2.2.nupkg.sha512",
+        "hotchocolate.aspnetcore.11.3.0.nupkg.sha512",
         "hotchocolate.aspnetcore.nuspec",
         "lib/net5.0/HotChocolate.AspNetCore.dll",
         "lib/netcoreapp3.1/HotChocolate.AspNetCore.dll"
@@ -2794,28 +2794,28 @@
         "lib/netstandard2.0/HotChocolate.AspNetCore.Playground.pdb"
       ]
     },
-    "HotChocolate.Data/11.2.2": {
-      "sha512": "wyWnmFabg7J1Gb609izzR6s/K/G69ysDgYaQLSxOlR0acv8o8PuE8W75TKnk/e8wmOj4MYJ8elQOji9TIkrvdA==",
+    "HotChocolate.Data/11.3.0": {
+      "sha512": "+Re+lzCzfVO4D5lRCbaLY+oH4u+MSc9bzS3PlDDnXKVZXcVXhZfw+hTqZeMTJdQDPMZnprteLxaePO7dLS1Tag==",
       "type": "package",
-      "path": "hotchocolate.data/11.2.2",
+      "path": "hotchocolate.data/11.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "hotchocolate.data.11.2.2.nupkg.sha512",
+        "hotchocolate.data.11.3.0.nupkg.sha512",
         "hotchocolate.data.nuspec",
         "lib/net5.0/HotChocolate.Data.dll",
         "lib/netcoreapp3.1/HotChocolate.Data.dll",
         "lib/netstandard2.0/HotChocolate.Data.dll"
       ]
     },
-    "HotChocolate.Data.EntityFramework/11.2.2": {
-      "sha512": "Dp7/wwyiOJoTOEUG6y8EKREOu07IFtyYt6kVck9EdOQCYCqoQr9LFK4QiLzrzm3oF+5K5XO08RQcjlgx5LA1iA==",
+    "HotChocolate.Data.EntityFramework/11.3.0": {
+      "sha512": "aY0fMQ8yYtTY11WgbLwl7vpyWzLw+M/km5zoCjZqhgM5L1QdHitlk1RavnrGpyTWaKJeid8RALzFjND4eZxW3Q==",
       "type": "package",
-      "path": "hotchocolate.data.entityframework/11.2.2",
+      "path": "hotchocolate.data.entityframework/11.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "hotchocolate.data.entityframework.11.2.2.nupkg.sha512",
+        "hotchocolate.data.entityframework.11.3.0.nupkg.sha512",
         "hotchocolate.data.entityframework.nuspec",
         "lib/netstandard2.1/HotChocolate.Data.EntityFramework.dll"
       ]
@@ -3033,14 +3033,14 @@
         "lib/netstandard2.0/HotChocolate.Types.OffsetPagination.dll"
       ]
     },
-    "HotChocolate.Types.Scalars.Upload/11.2.2": {
-      "sha512": "CKamIBdN9c2g31wLg32JWzMOx3KerGYuBYLr/5VC2BxYA4E48IeAc+He7+0dJjpaydh+9aK7r5jF2xfRQmX+Xw==",
+    "HotChocolate.Types.Scalars.Upload/11.3.0": {
+      "sha512": "gsIUQAYaQGVCXdccP0QwSjwgS2n4FNtCksEx2IRIULeblOf2Xy7RGIednrFvG39zdsqDG1C3LianJop4tg0qmA==",
       "type": "package",
-      "path": "hotchocolate.types.scalars.upload/11.2.2",
+      "path": "hotchocolate.types.scalars.upload/11.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "hotchocolate.types.scalars.upload.11.2.2.nupkg.sha512",
+        "hotchocolate.types.scalars.upload.11.3.0.nupkg.sha512",
         "hotchocolate.types.scalars.upload.nuspec",
         "lib/net5.0/HotChocolate.Types.Scalars.Upload.dll",
         "lib/netcoreapp3.1/HotChocolate.Types.Scalars.Upload.dll",
@@ -8566,10 +8566,10 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "HotChocolate.AspNetCore >= 11.2.2",
+      "HotChocolate.AspNetCore >= 11.3.0",
       "HotChocolate.AspNetCore.Authorization >= 11.3.0",
       "HotChocolate.AspNetCore.Playground >= 10.5.5",
-      "HotChocolate.Data.EntityFramework >= 11.2.2",
+      "HotChocolate.Data.EntityFramework >= 11.3.0",
       "HotChocolate.Stitching >= 11.3.0",
       "HotChocolate.Types.Filters >= 11.2.2",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.7",
@@ -8620,7 +8620,7 @@
         "dependencies": {
           "HotChocolate.AspNetCore": {
             "target": "Package",
-            "version": "[11.2.2, )"
+            "version": "[11.3.0, )"
           },
           "HotChocolate.AspNetCore.Authorization": {
             "target": "Package",
@@ -8632,7 +8632,7 @@
           },
           "HotChocolate.Data.EntityFramework": {
             "target": "Package",
-            "version": "[11.2.2, )"
+            "version": "[11.3.0, )"
           },
           "HotChocolate.Stitching": {
             "target": "Package",

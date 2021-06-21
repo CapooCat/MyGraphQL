@@ -1,7 +1,4 @@
-extend type InventoryInfo {
-  upc: Int!
-  isInStock: Boolean
-}
 extend type Query {
-  inventoryInfo(upc: Int!): InventoryInfo @delegate(schema: "inventory")
+  books: [Book!]! @delegate(schema: "MyGraphQL")
+  users: [User!]! @delegate(schema: "MyGraphQL")
 }

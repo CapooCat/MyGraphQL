@@ -30,12 +30,9 @@ namespace MyGraphQLs
         }
 
         public IConfiguration Configuration { get; }
-        public const string Inventory = "inventory";
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpClient(Inventory, c => c.BaseAddress = new Uri("https://localhost:44346/graphql/"));
-
             //Them Authentication
             var key = "4fb4043e16ff127eca681216598a830e8b0cf3bf";
             var issuer = DataEncryption.EncryptString(System.Net.Dns.GetHostName());
@@ -53,33 +50,20 @@ namespace MyGraphQLs
             });
             //Ket noi database
             services.AddPooledDbContextFactory<BookShellContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
             //Khoi tao GraphQL schema
             services
                 .AddGraphQLServer()
-
                 .AddMutationType<Mutation>()
-
                 .AddFiltering()
                 .AddProjections()
                 .AddAuthorization()
-
-
                 .AddType<BookType>()
                 .AddType<UserType>()
-                //Vi khong the su dung duoc 2 QueryType nen:
-                //comment phan nay va
                 .AddQueryType<Query>()
-
-                //uncomment phan nay de test Gateway
-                //.AddQueryType(d => d.Name("Query"))
-
-
-                .AddRemoteSchema(Inventory, ignoreRootTypes: true)
-                .AddTypeExtensionsFromFile("./Stitching.graphql")
-                
-                
-
+                .PublishSchemaDefinition(c => c
+                    .SetName("MyGraphQL")
+                    .IgnoreRootTypes()
+                    .AddTypeExtensionsFromFile("./Stitching.graphql"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -88,16 +72,20 @@ namespace MyGraphQLs
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                //setup duong dan GraphQL
-                app.UsePlayground(new PlaygroundOptions
-                {
-                    QueryPath = "/graphql",
-                    Path = "/playground"
-                });
             }
+            app.UsePlayground(new PlaygroundOptions
+            {
+                QueryPath = "/graphql",
+                Path = "/playground"
+            });
             app.UseAuthentication();
-            app.UseGraphQL("/graphql");
+
             app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGraphQL();
+            });
         }
     }
 }

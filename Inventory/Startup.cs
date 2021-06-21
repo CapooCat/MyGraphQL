@@ -19,7 +19,11 @@ namespace Inventory
             services
                 .AddSingleton<InventoryInfoRepository>()
                 .AddGraphQLServer()
-                .AddQueryType<Query>();
+                .AddQueryType<Query>()
+                .PublishSchemaDefinition(c => c
+                    .SetName("inventory")
+                    .IgnoreRootTypes()
+                    .AddTypeExtensionsFromFile("./Stitching.graphql")); ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

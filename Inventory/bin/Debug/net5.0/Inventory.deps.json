@@ -33,7 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Inventory/1.0.0": {
         "dependencies": {
-          "HotChocolate.AspNetCore": "11.2.2",
+          "HotChocolate.AspNetCore": "11.3.0",
           "HotChocolate.Stitching": "11.3.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -376,15 +376,15 @@
           "lib/net5.0/HotChocolate.Abstractions.dll": {}
         }
       },
-      "HotChocolate.AspNetCore/11.2.2": {
+      "HotChocolate.AspNetCore/11.3.0": {
         "dependencies": {
           "HotChocolate": "11.3.0",
-          "HotChocolate.Types.Scalars.Upload": "11.2.2"
+          "HotChocolate.Types.Scalars.Upload": "11.3.0"
         },
         "runtime": {
           "lib/net5.0/HotChocolate.AspNetCore.dll": {
-            "assemblyVersion": "11.2.2.0",
-            "fileVersion": "11.2.2.0"
+            "assemblyVersion": "11.3.0.0",
+            "fileVersion": "11.3.0.0"
           }
         },
         "compile": {
@@ -600,14 +600,14 @@
           "lib/net5.0/HotChocolate.Types.OffsetPagination.dll": {}
         }
       },
-      "HotChocolate.Types.Scalars.Upload/11.2.2": {
+      "HotChocolate.Types.Scalars.Upload/11.3.0": {
         "dependencies": {
           "HotChocolate.Types": "11.3.0"
         },
         "runtime": {
           "lib/net5.0/HotChocolate.Types.Scalars.Upload.dll": {
-            "assemblyVersion": "11.2.2.0",
-            "fileVersion": "11.2.2.0"
+            "assemblyVersion": "11.3.0.0",
+            "fileVersion": "11.3.0.0"
           }
         },
         "compile": {
@@ -2476,12 +2476,12 @@
       "path": "hotchocolate.abstractions/11.3.0",
       "hashPath": "hotchocolate.abstractions.11.3.0.nupkg.sha512"
     },
-    "HotChocolate.AspNetCore/11.2.2": {
+    "HotChocolate.AspNetCore/11.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-veDXy3wsmSuqJPRfNqdfpgB9iiQdChxLtbhZSJUPEDGEg5hHeNIpRwSYVANW3tRhmFoCDMNWU3+RMg92Yc0tZw==",
-      "path": "hotchocolate.aspnetcore/11.2.2",
-      "hashPath": "hotchocolate.aspnetcore.11.2.2.nupkg.sha512"
+      "sha512": "sha512-+nhE7UOyf9UEO3rxv3XMCdOQPCmW6bubyzTLUgJTW6KKOipgO9aZy7P8hsTtZPSPe/hLTaDN4q2+VldKD7B0XA==",
+      "path": "hotchocolate.aspnetcore/11.3.0",
+      "hashPath": "hotchocolate.aspnetcore.11.3.0.nupkg.sha512"
     },
     "HotChocolate.Execution/11.3.0": {
       "type": "package",
@@ -2574,12 +2574,12 @@
       "path": "hotchocolate.types.offsetpagination/11.3.0",
       "hashPath": "hotchocolate.types.offsetpagination.11.3.0.nupkg.sha512"
     },
-    "HotChocolate.Types.Scalars.Upload/11.2.2": {
+    "HotChocolate.Types.Scalars.Upload/11.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CKamIBdN9c2g31wLg32JWzMOx3KerGYuBYLr/5VC2BxYA4E48IeAc+He7+0dJjpaydh+9aK7r5jF2xfRQmX+Xw==",
-      "path": "hotchocolate.types.scalars.upload/11.2.2",
-      "hashPath": "hotchocolate.types.scalars.upload.11.2.2.nupkg.sha512"
+      "sha512": "sha512-gsIUQAYaQGVCXdccP0QwSjwgS2n4FNtCksEx2IRIULeblOf2Xy7RGIednrFvG39zdsqDG1C3LianJop4tg0qmA==",
+      "path": "hotchocolate.types.scalars.upload/11.3.0",
+      "hashPath": "hotchocolate.types.scalars.upload.11.3.0.nupkg.sha512"
     },
     "HotChocolate.Utilities/11.3.0": {
       "type": "package",

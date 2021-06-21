@@ -45,3 +45,4 @@ C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\obj\Debug\net5.0\Inventory.d
 C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\obj\Debug\net5.0\ref\Inventory.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\obj\Debug\net5.0\Inventory.pdb
 C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\obj\Debug\net5.0\Inventory.genruntimeconfig.cache
+C:\Users\trant\Documents\GitHub\MyGraphQL\Inventory\obj\Debug\net5.0\Inventory.csproj.AssemblyReference.cache

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyGraphQLs", "MyGraphQLs\MyGraphQLs.csproj", "{9A9BB6B4-69ED-43EE-93C8-E85EAC24A609}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory", "Inventory\Inventory.csproj", "{19F1BBF6-7FC3-4D24-A5DC-80D8065D0151}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{CF7B3122-FB4E-43E8-8854-149D6FBCC051}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{9A9BB6B4-69ED-43EE-93C8-E85EAC24A609}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A9BB6B4-69ED-43EE-93C8-E85EAC24A609}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A9BB6B4-69ED-43EE-93C8-E85EAC24A609}.Release|Any CPU.Build.0 = Release|Any CPU
-		{19F1BBF6-7FC3-4D24-A5DC-80D8065D0151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19F1BBF6-7FC3-4D24-A5DC-80D8065D0151}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19F1BBF6-7FC3-4D24-A5DC-80D8065D0151}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19F1BBF6-7FC3-4D24-A5DC-80D8065D0151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7B3122-FB4E-43E8-8854-149D6FBCC051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7B3122-FB4E-43E8-8854-149D6FBCC051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7B3122-FB4E-43E8-8854-149D6FBCC051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7B3122-FB4E-43E8-8854-149D6FBCC051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

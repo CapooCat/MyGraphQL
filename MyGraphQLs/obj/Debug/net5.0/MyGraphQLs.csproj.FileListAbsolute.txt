@@ -169,9 +169,7 @@ C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\GreenDonut
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Abstractions.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.AspNetCore.dll
-C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.AspNetCore.Abstractions.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.AspNetCore.Authorization.dll
-C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.AspNetCore.Playground.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Data.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Data.EntityFramework.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Execution.dll
@@ -180,7 +178,6 @@ C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocola
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Language.SyntaxTree.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Language.Utf8.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Language.Visitors.dll
-C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Server.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Stitching.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Stitching.Abstractions.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Subscriptions.dll
@@ -316,3 +313,6 @@ C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\obj\Debug\net5.0\MyGraphQLs
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\obj\Debug\net5.0\ref\MyGraphQLs.dll
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\obj\Debug\net5.0\MyGraphQLs.pdb
 C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\obj\Debug\net5.0\MyGraphQLs.genruntimeconfig.cache
+C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.AspNetCore.Abstractions.dll
+C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.AspNetCore.Playground.dll
+C:\Users\trant\Documents\GitHub\MyGraphQL\MyGraphQLs\bin\Debug\net5.0\HotChocolate.Server.dll
