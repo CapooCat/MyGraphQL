@@ -14,11 +14,13 @@ namespace Gateway
 {
     public class Startup
     {
+        //schema name
         public const string Books = "MyGraphQL";
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //Add schema Uri
             services.AddHttpClient(Books, c => c.BaseAddress = new Uri("https://localhost:44397/graphql/"));
             services
                 .AddGraphQLServer()

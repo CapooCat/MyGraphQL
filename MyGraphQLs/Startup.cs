@@ -60,6 +60,7 @@ namespace MyGraphQLs
                 .AddType<BookType>()
                 .AddType<UserType>()
                 .AddQueryType<Query>()
+                //Public schema for gateway fetching
                 .PublishSchemaDefinition(c => c
                     .SetName("MyGraphQL")
                     .IgnoreRootTypes()
